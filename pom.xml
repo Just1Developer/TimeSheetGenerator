@@ -5,12 +5,6 @@
     <groupId>edu.kit.kastel.sdq</groupId>
     <artifactId>timesheetgenerator</artifactId>
     <version>0.19.16-SNAPSHOT</version>
-    <packaging>pom</packaging> <!-- Indicate it's a parent pom -->
-
-    <modules>
-        <module>UITimesheetGenerator</module>
-        <module>TimesheetCompiler</module>
-    </modules>
 
     <name>TimeSheetGenerator</name>
     <scm>
@@ -72,6 +66,11 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+        <groupId>org.apache.pdfbox</groupId>
+        <artifactId>pdfbox</artifactId>
+        <version>2.0.29</version>
+    </dependency>
     </dependencies>
     <build>
         <resources>
